@@ -10,5 +10,3 @@ O projeto se trata de um sistema para o gerenciamento de uma cafeteria,  ele ir√
 ## Autores
 - Jo√£o Victor de Morais Reis
 - Victor Huggo Moraes Lima
-
-salve
