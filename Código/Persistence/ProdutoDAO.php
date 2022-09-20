@@ -11,6 +11,7 @@
             }
             else {
                 echo "Erro no Cadastramento: <br>" . $conn -> error;
+                echo "<br><a href='../View/tabelaProdutos.php'> Voltar </a>";
             }
         }
 

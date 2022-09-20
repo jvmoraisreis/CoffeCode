@@ -8,15 +8,17 @@
     <title>Consultar Cliente</title>
 </head>
 <body>
-    <h1>Consultar Cliente</h1> 
-    <div class="form-group center">
-        <form action="/View/telaConsultarCliente.php" method="POST">
-            <label for="email">Email:</label>
-            <input type="email" required name = "email" > <br><br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </form>
+    <div class="container">
+        <h1 class="display-4 text-muted">Consultar Cliente</h1> 
+        <div class="form-group center">
+            <form action="/View/telaConsultarCliente.php" method="POST">
+                <label for="email">Email:</label>
+                <input class="form-control"type="email" required name = "email" > <br><br>
+                <input class="btn btn-success" type="submit" value="Enviar">
+                <input class ="btn btn-success"type="reset" value="Limpar"> <br><br>
+            </form>
+        </div>
+        <a class='btn btn-primary' href="tabelaClientesView.php">Voltar</a>
     </div>
-    <a class='btn' href="tabelaClientesView.php">Voltar</a>
 </body>
 </html>

@@ -17,20 +17,21 @@
     }
 </style>
 <body>
-    <h1>Editar Produto</h1> 
-    <div class="form-group center">
-        <form action="../Controller/editarProduto.php" method="POST">
-            <label for="nome">Nome:</label>
-            <input type="text" required name="nome" id="input-readonly" value = <?php echo "$nome"; ?> readonly> <br><br>
-            <label for="descricao">Descrição:</label>
-            <input type="text" required name = "descricao" value = <?php echo "$descricao"; ?>> <br><br>
-            <label for="preco">Preço:</label>
-            <input type="number" step="0.01" name = "preco" min = "0" value = <?php echo "$preco"; ?>> <br><br>
-            <label for="qntdEmEstoque">Quantidade em Estoque:</label>
-            <input type="number" required min="0" name = "qntdEmEstoque" value = <?php echo "$qtdEmEstoque"; ?>> <br><br>
-            <input type="submit" name="update" id="update" value="Atualizar">
-        </form>
+    <div class="container">
+        <h1 class="display-4 text-muted">Editar Produto</h1> 
+        <div class="form-group center">
+            <form action="../Controller/editarProduto.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input class="form-control" type="text" required name="nome" id="input-readonly" value = <?php echo "$nome"; ?> readonly> <br>
+                <label for="descricao">Descrição:</label>
+                <input class="form-control" type="text" required name = "descricao" value = <?php echo "$descricao"; ?>> <br>
+                <label  for="preco">Preço:</label>
+                <input class="form-control" type="number" step="0.01" name = "preco" min = "0" value = <?php echo "$preco"; ?>> <br>
+                <input class="form-control" type="number" required min="0" name = "qntdEmEstoque" value = <?php echo "$qtdEmEstoque"; ?>> <br>
+                <input class="btn btn-success"type="submit" name="update" id="update" value="Atualizar"> <br><br>
+            </form>
+        </div>
+        <a class='btn btn-primary' href="tabelaProdutos.php">Voltar</a>
     </div>
-    <a class='btn' href="tabelaProdutos.php">Voltar</a>
 </body>
 </html>

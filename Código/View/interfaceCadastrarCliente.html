@@ -8,21 +8,25 @@
     <title>Cadastrar Cliente</title>
 </head>
 <body>
-    <h1>Cadastrar Cliente</h1> 
-    <div class="form-group center">
-        <form action="../Controller/cadastrarCliente.php" method="POST">
-            <label for="nome">Nome:</label>
-            <input type="text" required name="nome"> <br><br>
-            <label for="idade">Idade:</label>
-            <input type="number" required name = "idade" min="0"> <br><br>
-            <label for="email">Email:</label>
-            <input type="email" required name = "email" > <br><br>
-            <label for="qntdCompras">Quantidade de Compras:</label>
-            <input type="number" required min="0" name = "qntdCompras"> <br><br>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
-        </form>
+    
+    <div class="container">
+        <h2 class="display-4 text-muted">Cadastrar Cliente</h2> 
+        <div class="form-group">
+            <form action="../Controller/cadastrarCliente.php" method="POST">
+                <label for="nome">Nome:</label>
+                <input class="form-control" type="text" required name="nome"> <br>
+                <label for="idade">Idade:</label>
+                <input class="form-control" type="number" required name = "idade" min="0"> <br>
+                <label for="email">Email:</label>
+                <input class="form-control" type="email" required name = "email" > <br>
+                <label for="qntdCompras">Quantidade de Compras:</label>
+                <input class="form-control" type="number" required min="0" name = "qntdCompras"> <br>
+                <input class="btn btn-success" type="submit" value="Enviar">
+                <input class="btn btn-success" type="reset" value="Limpar"> <br><br>
+            </form>
+        </div>
+        <a class='btn btn-primary' href="tabelaClientesView.php">Voltar</a>
     </div>
-    <a class='btn' href="tabelaClientesView.php">Voltar</a>
+    
 </body>
 </html>

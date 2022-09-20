@@ -14,7 +14,7 @@
     }
 </style>
 <body>
-    <center><h1>Tabela Clientes</h1></center>
+    <center><h1 class="display-4 text-muted">Tabela Clientes</h1></center>
 
     <div class="m-5">
         <table class="table table-hover table-bg">
@@ -35,6 +35,7 @@
         </table>
     </div>
     <center><a class="btn btn-primary"href="/View/interfaceCadastrarCliente.html">Cadastrar Cliente</a></center><br>
-    <center><a class="btn btn-primary"href="/View/interfaceConsultarCliente.html">Consultar Cliente</a></center>
+    <center><a class="btn btn-primary"href="/View/interfaceConsultarCliente.html">Consultar Cliente</a></center><br>
+    <center><a class="btn btn-primary"href="../index.html">Voltar</a></center>
 </body>
 </html>
