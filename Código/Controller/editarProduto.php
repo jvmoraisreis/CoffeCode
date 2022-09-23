@@ -16,5 +16,6 @@
 
         $produtoDAO = new ProdutoDAO();
         $produtoDAO->editarProduto($p,$conexao);
+        header('Location: ../View/tabelaProdutos.php');
     }
 ?>

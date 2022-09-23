@@ -31,7 +31,7 @@
             $sql = "UPDATE cliente SET Nome = '".$cliente->getNome()."', Idade = '".$cliente->getIdade()."', Email = '".$cliente->getEmail()."', QtdCompras = '".$cliente->getQntdCompras()."' WHERE Email = '".$cliente->getEmail()."'";
 
             $result = $conn->query($sql);
-            header('Location: ../View/tabelaClientesView.php');
+            
         }
 
         function deletarCliente($email, $conn) {

@@ -31,7 +31,6 @@
             $sql = "UPDATE produto SET Nome = '".$produto->getNome()."', Descricao = '".$produto->getDescricao()."', Preco = '".$produto->getPreco()."', QtdEmEstoque = '".$produto->getQntdEmEstoque()."' WHERE Nome = '".$produto->getNome()."'";
 
             $result = $conn->query($sql);
-            header('Location: ../View/tabelaProdutos.php');
         }
 
         function deletarProduto($nome, $conn) {

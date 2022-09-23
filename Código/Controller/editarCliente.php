@@ -16,5 +16,6 @@
 
         $clienteDAO = new ClienteDAO();
         $clienteDAO->editarCliente($c,$conexao);
+        header('Location: ../View/tabelaClientesView.php');
     }
 ?>
